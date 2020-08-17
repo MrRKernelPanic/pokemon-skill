@@ -559,6 +559,8 @@ class PokemonSkill(CommonQuerySkill):
                 self.do_pokemon_type(mon)
             elif self.voc_match(phrase, "Form"):
                 self.do_pokemon_form(mon)
+            elif self.voc_match(phrase, "Number")
+				self.speak_dialog("pokemon.number.is", {"pokemon": self._pokemon_name(mon), "number": str(mon.species.id)})
             elif self.voc_match(phrase, "ID"):
                 self.speak_dialog("pokemon.id.is", {"pokemon": self._pokemon_name(mon), "id": str(mon.species.id)})
             elif self.voc_match(phrase, "Speed"):
